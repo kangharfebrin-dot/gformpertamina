@@ -16,7 +16,7 @@ class MonitoringResponseSeeder extends Seeder
             [
                 'email_address'             => 'operator.maos1@pertamina.com',
                 'tanggal'                   => '2026-08-25',
-                'lokasi'                    => 'FT Maos - Tangki 1',
+                'lokasi'                    => 'Cilacap',
                 'stok_awal_mm'              => 4250.0,
                 'volume_stok_awal_l'        => 350000.0,
                 'density_awal_penyaluran'   => 0.745,
@@ -32,7 +32,7 @@ class MonitoringResponseSeeder extends Seeder
             [
                 'email_address'             => 'supervisor.ftmaos@pertamina.com',
                 'tanggal'                   => '2026-08-26',
-                'lokasi'                    => 'FT Maos - Tangki 2',
+                'lokasi'                    => 'Kroya',
                 'stok_awal_mm'              => 5100.0,
                 'volume_stok_awal_l'        => 420000.0,
                 'density_awal_penyaluran'   => 0.742,
@@ -48,7 +48,7 @@ class MonitoringResponseSeeder extends Seeder
             [
                 'email_address'             => 'petugas.penyaluran@pertamina.com',
                 'tanggal'                   => '2026-08-27',
-                'lokasi'                    => 'FT Maos - Filling Shed',
+                'lokasi'                    => 'Purwokerto',
                 'stok_awal_mm'              => 3800.0,
                 'volume_stok_awal_l'        => 310000.0,
                 'density_awal_penyaluran'   => 0.748,

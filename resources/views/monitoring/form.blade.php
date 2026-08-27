@@ -52,17 +52,23 @@
 
     <!-- Lokasi -->
     <div class="gf-card">
-        <label class="gf-question-title" for="lokasi">
+        <label class="gf-question-title">
             Lokasi <span class="gf-required-star">*</span>
         </label>
-        <div class="gf-question-desc">Pilih atau ketik lokasi titik ukur / terminal.</div>
-        <select name="lokasi" id="lokasi" class="gf-input-text" style="background: transparent;" required>
-            <option value="" disabled {{ old('lokasi') ? '' : 'selected' }}>-- Pilih Lokasi --</option>
-            <option value="FT Maos - Tangki 1" {{ old('lokasi') == 'FT Maos - Tangki 1' ? 'selected' : '' }}>FT Maos - Tangki 1</option>
-            <option value="FT Maos - Tangki 2" {{ old('lokasi') == 'FT Maos - Tangki 2' ? 'selected' : '' }}>FT Maos - Tangki 2</option>
-            <option value="FT Maos - Filling Shed" {{ old('lokasi') == 'FT Maos - Filling Shed' ? 'selected' : '' }}>FT Maos - Filling Shed</option>
-            <option value="FT Maos - Area Penyaluran Utama" {{ old('lokasi') == 'FT Maos - Area Penyaluran Utama' ? 'selected' : '' }}>FT Maos - Area Penyaluran Utama</option>
-        </select>
+        <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 14px;">
+            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 14px; color: #202124;">
+                <input type="radio" name="lokasi" value="Cilacap" {{ old('lokasi') == 'Cilacap' ? 'checked' : '' }} style="accent-color: var(--pertamina-blue); width: 18px; height: 18px;" required>
+                <span>1. Cilacap</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 14px; color: #202124;">
+                <input type="radio" name="lokasi" value="Kroya" {{ old('lokasi') == 'Kroya' ? 'checked' : '' }} style="accent-color: var(--pertamina-blue); width: 18px; height: 18px;">
+                <span>2. Kroya</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 12px; cursor: pointer; font-size: 14px; color: #202124;">
+                <input type="radio" name="lokasi" value="Purwokerto" {{ old('lokasi') == 'Purwokerto' ? 'checked' : '' }} style="accent-color: var(--pertamina-blue); width: 18px; height: 18px;">
+                <span>3. Purwokerto</span>
+            </label>
+        </div>
         @error('lokasi')
             <div class="gf-alert-error">{{ $message }}</div>
         @enderror
